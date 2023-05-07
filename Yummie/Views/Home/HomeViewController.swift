@@ -42,6 +42,10 @@ class HomeViewController: UIViewController {
          
         title = "Yummie"
         
+//        let services = NetworkService()
+//        let request =  services.createRequest(route: .temp, method: .get, paramaters: ["firstName": "Yusuf Mert", "lastName":"Yıldız"])
+//        print("The URL is: \(request?.url)")
+        
         registerCell()
 
     }
@@ -57,6 +61,8 @@ class HomeViewController: UIViewController {
     }
     
 }
+
+//MARK: 
 extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
