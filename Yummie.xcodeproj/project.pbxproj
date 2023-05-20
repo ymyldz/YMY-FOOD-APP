@@ -38,6 +38,7 @@
 		CA6A083B2A081CD60079FCC9 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083A2A081CD60079FCC9 /* NetworkingService.swift */; };
 		CA6A083D2A081D880079FCC9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083C2A081D880079FCC9 /* Route.swift */; };
 		CA6A083F2A081DF80079FCC9 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083E2A081DF80079FCC9 /* Method.swift */; };
+		CAE7284C2A1915A800AB68A5 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7284B2A1915A800AB68A5 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		CA6A083A2A081CD60079FCC9 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		CA6A083C2A081D880079FCC9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		CA6A083E2A081DF80079FCC9 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		CAE7284B2A1915A800AB68A5 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		F0FC0F8022DCEC308C06BBB1 /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -295,6 +297,7 @@
 				CA6A083A2A081CD60079FCC9 /* NetworkingService.swift */,
 				CA6A083C2A081D880079FCC9 /* Route.swift */,
 				CA6A083E2A081DF80079FCC9 /* Method.swift */,
+				CAE7284B2A1915A800AB68A5 /* AppError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				CA689C4429FF1B7B00A3C770 /* String+Extension.swift in Sources */,
 				CA689C4829FF219400A3C770 /* CardView.swift in Sources */,
 				CA1655D02A01162400C570B8 /* ListDishesViewController.swift in Sources */,
+				CAE7284C2A1915A800AB68A5 /* AppError.swift in Sources */,
 				CA3150A629FBE86C005F2591 /* OnboardingCollectionViewCell.swift in Sources */,
 				CA1655BD2A005B3400C570B8 /* Dish.swift in Sources */,
 				CA1655BA2A0058FE00C570B8 /* DishPortraitCollectionViewCell.swift in Sources */,

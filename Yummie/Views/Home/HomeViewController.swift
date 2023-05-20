@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
-    
     @IBOutlet weak var popularCollectionView: UICollectionView!
     
     @IBOutlet weak var specialCollectionView: UICollectionView!
@@ -42,12 +41,14 @@ class HomeViewController: UIViewController {
          
         title = "Yummie"
         
+        NetworkService.shared.myFirstRequest()
+         
 //        let services = NetworkService()
 //        let request =  services.createRequest(route: .temp, method: .get, paramaters: ["firstName": "Yusuf Mert", "lastName":"Yıldız"])
 //        print("The URL is: \(request?.url)")
         
         registerCell()
-
+        
     }
     
     private func registerCell() {
