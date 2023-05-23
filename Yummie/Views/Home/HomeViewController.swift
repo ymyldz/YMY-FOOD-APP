@@ -41,7 +41,16 @@ class HomeViewController: UIViewController {
          
         title = "Yummie"
         
-        NetworkService.shared.myFirstRequest()
+        NetworkService.shared.myFirstRequest { (result) in
+            switch result {
+            case .success(let data):
+                for dish in data {
+                    print(dish.name ?? "")
+                }
+            case .failure(let error):
+                print("The error is: \(error.localizedDescription)")
+            }
+        }
          
 //        let services = NetworkService()
 //        let request =  services.createRequest(route: .temp, method: .get, paramaters: ["firstName": "Yusuf Mert", "lastName":"Yıldız"])

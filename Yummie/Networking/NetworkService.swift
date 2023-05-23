@@ -18,13 +18,13 @@ struct NetworkService{
     static let shared = NetworkService()
     private init (){}
     
-    func myFirstRequest(){
-        request(route: .temp, method: .get, type: String.self, completion: { _ in})
+    func myFirstRequest(completion: @escaping(Result<[Dish], Error>) -> Void){
+        request(route: .temp, method: .get, completion: completion)
     }
-    private func request<T: Codable>(route:Route,
+    private func request<T: Decodable>(route:Route,
                                      method: Method ,
-                                     paramaters: [String: Any]? = nil , type:T.Type ,
-                                     completion: (Result<T,Error>) -> Void) {
+                                     paramaters: [String: Any]? = nil ,
+                                     completion: @escaping(Result<T,Error>) -> Void) {
         guard let request = createRequest(route: route, method: method,paramaters: paramaters) else {
             completion(.failure(Apperror.unknownError))
             return}
@@ -33,16 +33,47 @@ struct NetworkService{
             if let data = data {
                 result = .success(data)
                 let responseString = String(data: data, encoding: .utf8) ?? "Could not stringify our data"
-                print("The response is:\n\(responseString)")
+                //print("The response is:\n\(responseString)")
             }else if let error = error {
                 result = .failure(error)
                 print("Ther error is : \(error.localizedDescription)")
             }
             DispatchQueue.main.async {
-                // TODO decode our result and send back to user
+                self.handlerResponse(result: result, completion: completion)
             }
         }.resume()
     }
+    
+    private func handlerResponse<T: Decodable>(result: Result<Data,Error>? , completion: (Result<T, Error>) -> Void ) {
+        
+        guard let result = result else{
+            completion(.failure(Apperror.unknownError))
+            return
+        }
+        
+        switch result {
+            
+        case .success(let data):
+            let decoder = JSONDecoder()
+            guard let response = try? decoder.decode(ApiResponse<T>.self, from: data) else{
+                completion(.failure(Apperror.errorDecoding))
+                return
+            }
+            
+            if let error = response.error {
+                completion(.failure(Apperror.serverError(error)))
+                return
+            }
+            if let decodedData = response.data {
+                completion(.success(decodedData))
+            }else {
+                completion(.failure(Apperror.unknownError))
+            }
+        case .failure(let error):
+            completion(.failure(error))
+        }
+    }
+    
     
      private func createRequest(route: Route,
                                method: Method ,

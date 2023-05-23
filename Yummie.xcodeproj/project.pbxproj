@@ -35,9 +35,10 @@
 		CA689C4229FF181400A3C770 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA689C4129FF181400A3C770 /* DishCategory.swift */; };
 		CA689C4429FF1B7B00A3C770 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA689C4329FF1B7B00A3C770 /* String+Extension.swift */; };
 		CA689C4829FF219400A3C770 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA689C4729FF219400A3C770 /* CardView.swift */; };
-		CA6A083B2A081CD60079FCC9 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083A2A081CD60079FCC9 /* NetworkingService.swift */; };
+		CA6A083B2A081CD60079FCC9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083A2A081CD60079FCC9 /* NetworkService.swift */; };
 		CA6A083D2A081D880079FCC9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083C2A081D880079FCC9 /* Route.swift */; };
 		CA6A083F2A081DF80079FCC9 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083E2A081DF80079FCC9 /* Method.swift */; };
+		CABC6C142A1CE54E0041F4C4 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC6C132A1CE54E0041F4C4 /* ApiResponse.swift */; };
 		CAE7284C2A1915A800AB68A5 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7284B2A1915A800AB68A5 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,9 +74,10 @@
 		CA689C4129FF181400A3C770 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		CA689C4329FF1B7B00A3C770 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CA689C4729FF219400A3C770 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		CA6A083A2A081CD60079FCC9 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		CA6A083A2A081CD60079FCC9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CA6A083C2A081D880079FCC9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		CA6A083E2A081DF80079FCC9 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		CABC6C132A1CE54E0041F4C4 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		CAE7284B2A1915A800AB68A5 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		F0FC0F8022DCEC308C06BBB1 /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -294,10 +296,11 @@
 		CA6A08392A081CC20079FCC9 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				CA6A083A2A081CD60079FCC9 /* NetworkingService.swift */,
+				CA6A083A2A081CD60079FCC9 /* NetworkService.swift */,
 				CA6A083C2A081D880079FCC9 /* Route.swift */,
 				CA6A083E2A081DF80079FCC9 /* Method.swift */,
 				CAE7284B2A1915A800AB68A5 /* AppError.swift */,
+				CABC6C132A1CE54E0041F4C4 /* ApiResponse.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -434,7 +437,8 @@
 				CA31509F29FBCF46005F2591 /* OnboardingViewController.swift in Sources */,
 				CA1655C52A00795300C570B8 /* DishDetailViewController.swift in Sources */,
 				CA1655C12A00646600C570B8 /* DIshLandscapeCollectionViewCell.swift in Sources */,
-				CA6A083B2A081CD60079FCC9 /* NetworkingService.swift in Sources */,
+				CABC6C142A1CE54E0041F4C4 /* ApiResponse.swift in Sources */,
+				CA6A083B2A081CD60079FCC9 /* NetworkService.swift in Sources */,
 				CA6A083D2A081D880079FCC9 /* Route.swift in Sources */,
 				CA689C3A29FC922200A3C770 /* HomeViewController.swift in Sources */,
 				CA689C4229FF181400A3C770 /* DishCategory.swift in Sources */,
