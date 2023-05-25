@@ -7,5 +7,6 @@ target 'Yummie' do
 
   # Pods for Yummie
   pod 'Kingfisher', '~> 7.0'
+  pod 'ProgressHUD'
 
 end

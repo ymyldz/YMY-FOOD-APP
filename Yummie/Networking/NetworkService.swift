@@ -18,9 +18,14 @@ struct NetworkService{
     static let shared = NetworkService()
     private init (){}
     
-    func myFirstRequest(completion: @escaping(Result<[Dish], Error>) -> Void){
-        request(route: .temp, method: .get, completion: completion)
+    
+    func fetchAllCategories(completion: @escaping(Result<AllDishes, Error>) -> Void){
+        request(route: .fetchAllCategories, method: .get, completion: completion)
+        
+        
     }
+    
+    
     private func request<T: Decodable>(route:Route,
                                      method: Method ,
                                      paramaters: [String: Any]? = nil ,
@@ -28,6 +33,9 @@ struct NetworkService{
         guard let request = createRequest(route: route, method: method,paramaters: paramaters) else {
             completion(.failure(Apperror.unknownError))
             return}
+        
+        
+        
         URLSession.shared.dataTask(with: request) { data, response, error in
             var result : Result<Data,Error>?
             if let data = data {

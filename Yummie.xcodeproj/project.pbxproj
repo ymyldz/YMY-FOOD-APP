@@ -39,6 +39,7 @@
 		CA6A083D2A081D880079FCC9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083C2A081D880079FCC9 /* Route.swift */; };
 		CA6A083F2A081DF80079FCC9 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6A083E2A081DF80079FCC9 /* Method.swift */; };
 		CABC6C142A1CE54E0041F4C4 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC6C132A1CE54E0041F4C4 /* ApiResponse.swift */; };
+		CADA60302A1F9DB6008120A0 /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA602F2A1F9DB6008120A0 /* AllDishes.swift */; };
 		CAE7284C2A1915A800AB68A5 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7284B2A1915A800AB68A5 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		CA6A083C2A081D880079FCC9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		CA6A083E2A081DF80079FCC9 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		CABC6C132A1CE54E0041F4C4 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		CADA602F2A1F9DB6008120A0 /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
 		CAE7284B2A1915A800AB68A5 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		F0FC0F8022DCEC308C06BBB1 /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -213,6 +215,7 @@
 				CA689C4129FF181400A3C770 /* DishCategory.swift */,
 				CA1655BC2A005B3400C570B8 /* Dish.swift */,
 				CA1655D42A01258900C570B8 /* Order.swift */,
+				CADA602F2A1F9DB6008120A0 /* AllDishes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				CA689C3F29FF169B00A3C770 /* CategoryCollectionViewCell.swift in Sources */,
 				CA3150A429FBE3E6005F2591 /* OnboardingSlide.swift in Sources */,
 				CA31508729FBC9E7005F2591 /* AppDelegate.swift in Sources */,
+				CADA60302A1F9DB6008120A0 /* AllDishes.swift in Sources */,
 				CA31508929FBC9E7005F2591 /* SceneDelegate.swift in Sources */,
 				CA6A083F2A081DF80079FCC9 /* Method.swift in Sources */,
 				CA3150A229FBE084005F2591 /* UIView+Extension.swift in Sources */,
